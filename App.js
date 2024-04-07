@@ -16,8 +16,17 @@ const CONNECTION_STRING =
 mongoose.connect(CONNECTION_STRING);
 const app = express();
 
-app.use(cors({ credentials: true, origin: [...process.env.FRONTEND_URL] }));
-console.log(process.env.FRONTEND_URL);
+app.use(
+  cors({
+    credentials: true,
+    origin: [
+      "http://localhost:3000",
+      "https://a5--lustrous-sprinkles-d4067e.netlify.app",
+      "https://a6--lustrous-sprinkles-d4067e.netlify.app",
+      "https://lustrous-sprinkles-d4067e.netlify.app",
+    ],
+  })
+);
 
 const sessionOptions = {
   secret: process.env.SESSION_SECRET,

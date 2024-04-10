@@ -7,7 +7,7 @@ export const createModule = (module) => {
 
 export const findAllModules = () => model.find();
 
-export const findModuleById = (cid) => model.find({ courseNumber: cid });
+export const findModuleById = (cid) => model.find({ cid: cid });
 
 export const updateModule = (moduleId, module) =>
   model.updateOne({ _id: moduleId }, { $set: module });

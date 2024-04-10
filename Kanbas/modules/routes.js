@@ -17,7 +17,7 @@ function ModuleRoutes(app) {
     const { cid } = req.params;
     const newModule = {
       ...req.body,
-      course: cid,
+      cid: cid,
     };
     const module = await dao.createModule(newModule);
     res.send(module);

@@ -24,6 +24,7 @@ app.use(
       "http://localhost:3000",
       "https://a5--lustrous-sprinkles-d4067e.netlify.app",
       "https://a6--lustrous-sprinkles-d4067e.netlify.app",
+      "https://final--lustrous-sprinkles-d4067e.netlify.app",
       "https://lustrous-sprinkles-d4067e.netlify.app",
     ],
   })
